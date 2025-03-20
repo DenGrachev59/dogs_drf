@@ -24,7 +24,7 @@ class Dog(models.Model):
     photo = models.ImageField(upload_to='dog_photo', **NULLABLE, verbose_name='Фото')
     date_born = models.DateField(**NULLABLE, verbose_name='Дата рождения')
 
-    owner = models.ForeignKey("users.User", on_delete=models.CASCADE, verbose_name='владелец')
+    #owner = models.ForeignKey("users.User", on_delete=models.CASCADE, verbose_name='владелец')
 
     def __str__(self):
         return f'{self.name} ({self.breed})'

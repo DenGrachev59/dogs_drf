@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'dogs_drf.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'shelter3',
+        'NAME': 'shelter2',
         'USER': 'postgres',
         'PASSWORD': '524010',
 
