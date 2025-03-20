@@ -36,19 +36,19 @@ class Dog(models.Model):
         ordering = ['breed', 'name',]
 
 
-class Parent(models.Model):
-    dog = models.ForeignKey(Dog, on_delete=models.CASCADE, verbose_name= "кличка собаки")
-    name = models.CharField(max_length=250, verbose_name='Кличка')
-    category = models.ForeignKey(Breed, on_delete=models.CASCADE, verbose_name='Порода')
-    birth_day = models.DateField(**NULLABLE, verbose_name='Дата рождения')
-
-    def __str__(self):
-        return f'{self.name} ({self.category})'
-
-
-    class Meta:
-        verbose_name = 'предок'
-        verbose_name_plural = 'предки'
+# class Parent(models.Model):
+#     dog = models.ForeignKey(Dog, on_delete=models.CASCADE, verbose_name= "кличка собаки")
+#     name = models.CharField(max_length=250, verbose_name='Кличка')
+#     category = models.ForeignKey(Breed, on_delete=models.CASCADE, verbose_name='Порода')
+#     birth_day = models.DateField(**NULLABLE, verbose_name='Дата рождения')
+#
+#     def __str__(self):
+#         return f'{self.name} ({self.category})'
+#
+#
+#     class Meta:
+#         verbose_name = 'предок'
+#         verbose_name_plural = 'предки'
 
 
 
